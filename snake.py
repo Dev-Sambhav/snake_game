@@ -6,8 +6,8 @@ UP = 90
 DOWN = 270
 LEFT = 180
 RIGHT = 0
-SNAKE_COLOR = ["seashell", "cyan", "pale green", "snow", "gold", "green yellow", "bisque", "hot pink", "deep pink",
-               "crimson"]
+# SNAKE_COLOR = ["seashell", "cyan", "pale green", "snow", "gold", "green yellow", "bisque", "hot pink", "deep pink",
+#                "crimson"]
 
 
 class Snake:
@@ -23,7 +23,7 @@ class Snake:
     def add_snake(self, pos):
         snake = Turtle(shape="square")
         snake.penup()
-        snake.color(choice(SNAKE_COLOR))
+        snake.color("pale green")
         snake.goto(pos)
         self.snake_segments.append(snake)
 
